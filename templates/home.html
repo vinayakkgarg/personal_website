@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8">
     <title>Vinayakk Garg</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -19,30 +20,43 @@
 
 
     <style>
-        h1 {
-            font-family: "Raleway", sans-serif
+        @media only screen and (max-width: 600px) {
+            #bannertext {
+                font-family: "Raleway", sans-serif;
+                font-size: 6.2vw;
+            }
+
+            #bannerquote {
+                font-size: 5vw;
+            }
         }
 
+
+        h1 {
+            font-family: "Raleway", sans-serif;
+        }
 
         body,
         html {
             height: 100%;
+            -webkit-text-size-adjust: auto;
         }
 
 
         .bgimg {
-            background-image: url('https://wallpapercave.com/wp/T7aT7Gn.jpg');
+            background-image: url('https://lh3.googleusercontent.com/Fj-0ywW_f7aan3DOYuxD2yZy7pAwCDjRajfYkEwtsNnX5HBLz6eQICW48ZfH5q9Oqicv7Q02DPgEu3vbcqjbJGeFlBGniZiHBXOk_JJnkNQBvGY1PkkhllsQpB1K1nyBnuFb5fliCb21Jxt2yjwKwK7xRFEzCB8RBgtMfr0KBj4NxglE-pTKCBB9wYQGY5RWuRFYvnccg4MsiL15KrwoFiiJFjfneUGTPppJDz-rRl3ohrS56qFThEWFKp_Ur8xhqarXREjpkgQ3Qjhm3hIZPTwgJyxp4epka0j2vHnp2OzHlXthbECRp82-ermdyKjkmJpJRaNVUYwkSWtEWd4y-h3XXsiLLDStrTTwqXIbbX9lPfy8T7mR1RaYreZJHEhHfVeSrtnvZk7WVIqUHybmSJp8JICscLMzbPcQzutJpcC_pyGgAmHrleyJaPFbD2WfRHIMP0xQ7DI999qKDHeaWtFxj1yegMOMmJkMpyLFAF1wZs7BT7NSXSKG0c4eHzqH0fvyIH6E7f7HQYWpLTY5PH1LJbfKgc-Srl_2yqycIOrzh-00J7CL2lQbvSJW5ZCrbNZuMo4viB1kSBS4OPW6-NTGL8ENdcbLS-AVetQMkR1cnXkhQg6osXOtKawntxasY6gKXd0Uv-2CPZgM0p1ovxaKOfbHOaFu=w1287-h804-no');
             min-height: 100%;
             background-position: center;
             background-size: cover;
-            filter: brightness(30%);
             background-attachment: fixed;
             background-repeat: no-repeat;
         }
 
         #myimg {
-            border: 10px solid #fff;
-            padding: 15px;
+            border: 0.625em solid #fff;
+            padding: 0.938em;
+            max-width: 100%;
+            height: auto;
         }
 
         hr {
@@ -68,21 +82,22 @@
 </script>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50" onload=scrollToTop(500)>
-    <div class="bgimg w3-display-container"> </div>
-    <div class="w3-display-bottommiddle w3-text-white w3-animate-opacity">
-        <h1 class="w3-jumbo w3-animate-top"><b><span id="bannerText">VINAYAKK GARG</span></b>
-        </h1>
-        <h3 class="w3-animate-top">
-            <center>Learning the Deep Learning</center>
-        </h3>
-        <br><br><br><br><br><br><br><br>
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+        <div class="w3-display-middle">
+            <h1 class="w3-jumbo w3-animate-top" style="margin-top: 80%;"><b><span id="bannertext">VINAYAKK
+                        GARG</span></b>
+            </h1>
+            <h3 class="w3-animate-top">
+                <center><span id="bannerquote"> Learning the Deep Learning</span></center>
+            </h3>
+        </div>
     </div>
 
     <div class="w3-display-topmiddle w3-animate-opacity">
         <br><br><br><br><br>
         <img id="myimg"
             src="https://lh3.googleusercontent.com/fXdLKiCY02h5FxcRDhssr0EjGiobThpNO1Z2RZr62uSVfDzF2ov-pUrmhqgwn5rs1rmnaUsfXY0RwTrnw--p4fw9U9CPnAWOM0HJU5gMzdpvzvYp0QcNSOpI0O3juZyGLFZzRQjF21NPCaJlvvnXzi2GFpiVSwbVKJ4dFCzF5BKTD6Ibjr0lSmTZyrM5INol6nJ0CbHogZ3KHMWvYNKgx1oUflMH7U3oVZyzvFZlaCPjFp1GcW_YDbiskY_Lsv0zJsUCPInS0qJ_o7S7WgBOkPyJmB-ocbHDITSJA8Ri3Q2arYeY_RZHVhcZtoax-kizIPKcFnM33cz8lYTVW51x8ujrWz3CI-Ugtt71-zeAm-ZXMh1VFiGTM-8w3EKFXHrO1SY_u5kZnGpc97QJH3tZerwNn71tOILyiqvLyxCbbnIAnASg8KZvl0_SxRAiwEytRVcHCWy-Q8RtogWYB3yEkoaRaqwYvsDhVobTGL0UqL_a8GX3DqX_blUMQKrkoo-kE8i1KBBgtxDXSfVW0JM3Ra07zfoRlD50U2IylVPnxsEV4kg0L4lzfnzbxpV8-wkM6lySbpnjv5Rou8Erx4tCnxpK4OHHZKvYj1FhQCDAvHU_k0vGaOtLGycS50vg1tFEKS8WB4OM1vPAroCJvrEQMaYLKfMXMlqZ=s640-no"
-            class="w3-circle" height="350" width="350" alt="Vinayakk Garg">
+            class="w3-circle w3-animate-top" height="350" width="350" alt="Vinayakk Garg">
     </div>
 
     <div class="main">
