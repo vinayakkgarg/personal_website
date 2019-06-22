@@ -1,7 +1,21 @@
 <style>
     @media only screen and (max-width: 600px) {
         #socialmediabuttons {
-            font-size: 10vw;
+            font-size: 8vw;
+        }
+
+        #info {
+            padding-left: 5vw;
+            padding-bottom: 1.732vw;
+        }
+
+        #dropamsg {
+            padding-top: 1.732vw;
+        }
+
+        #mailbtn {
+            width: 100%;
+
         }
 
     }
@@ -22,7 +36,6 @@
         font-size: 16px;
         margin: 4px 2px;
         -webkit-transition-duration: 0.4s;
-        /* Safari */
         transition-duration: 0.4s;
         cursor: pointer;
     }
@@ -34,44 +47,33 @@
 </style>
 
 <div id="contact">
-    <footer class="w3-center">
-        <form method="get" action="https://drive.google.com/file/d/1rzSEjNItG83X9wQU23zSiCr6eMgMahBQ/view">
-            <div class="w3-xxxlarge">
-                <button class="buttonResume">RESUME<i class="fa fa-file" style="padding-left: 20px"></i></button>
-            </div>
-        </form>
-    </footer>
-
-
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-        <h2 class="w3-wide w3-center">Let's Connect!</h2>
-        <p class="w3-opacity w3-center"><i>Drop a Message</i></p>
-        <div class="w3-row w3-padding-32">
-            <div class="w3-col m6 w3-large w3-margin-bottom">
-                <i class="fa fa-map-marker" style="width:30px"></i> New Delhi, IN<br>
-                <i class="fa fa-phone" style="width:30px"></i>+91 9871838880<br>
-                <i class="fa fa-envelope" style="width:30px"> </i> vinayakk.garg99@gmail.com<br>
-            </div>
-            <div class="w3-col m6">
-                <form action="" target="_blank">
-                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-                        <div class="w3-half">
-                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-                        </div>
-                        <div class="w3-half">
-                            <input class="w3-input w3-border" type="email" placeholder="Email" required name="Email">
-                        </div>
+    <div class="w3-container w3-black w3-content w3-padding-64" style="max-width:1600px">
+        <div class="w3-content" style="max-width:800px">
+            <h2 class="w3-wide w3-center">Let's Connect!</h2>
+            <div class="w3-row w3-padding-32">
+                <div class="w3-col m6 w3-large w3-margin-bottom" id="info">
+                    <i class="fa fa-map-marker" style="width:30px"></i> New Delhi, IN<br>
+                    <i class="fa fa-phone" style="width:30px"></i>+91 9871838880<br>
+                    <i class="fa fa-envelope" style="width:30px"> </i> vinayakk.garg99@gmail.com<br>
+                </div>
+                <div class="w3-col m6">
+                    <div class="w3-row-padding">
+                        <a href="mailto:vinayakk.garg99@gmail.com" target="_blank">
+                            <button id="mailbtn" class=" w3-button w3-white w3-section w3-right" type="submit"
+                                style="border: 1px solid black;">
+                                <i class=" fa fa-mail-reply"></i>
+                                DROP ME A MESSAGE
+                            </button>
+                        </a>
                     </div>
-                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-                    <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-                </form>
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="w3-padding-32 w3-black w3-center w3-margin-top">
-        <div class="w3-xxxlarge w3-padding-16">
+    <footer class="w3-padding-16 w3-center w3-margin-top">
+        <div class="w3-xxlarge w3-padding-8">
             <span id="socialmediabuttons">
                 <a href=" https://www.facebook.com/vinayakk.garg.1"> <i
                         class="fa fa-facebook-f w3-hover-opacity"></i></a>

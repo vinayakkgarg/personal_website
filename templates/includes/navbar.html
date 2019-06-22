@@ -7,6 +7,11 @@
         background-color: #333;
         overflow: hidden;
         border-bottom: 1px solid #333;
+        text-align: center;
+    }
+
+    .navbar-header {
+        text-align: center;
     }
 
     /* Style the links inside the navigation bar */
@@ -28,24 +33,17 @@
     }
 </style>
 
-<script>
-    $('.btn-navbar').addClass('collapsed');
-    $('.nav-collapse').removeClass('in').css('height', '0');
-</script>
 
-<nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark bg-company-black " id="navbar">
+<nav class="navbar sticky-top navbar-expand-sm bg-dark navbar-dark bg-company-black " role="navigation">
     <a class=" navbar-brand" href="/">HOME</a>
     <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
-        data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
-        aria-label="Toggle navigation"><span class="dark-blue-text"><i class="fas fa-bars fa-1x"></i></span></button> -->
     <div class="collapse navbar-collapse justify-content-end" id="navbarText">
-        <ul class="navbar-nav nav-fill w-100">
+        <ul class="nav navbar-nav nav-fill w-100 navbar-right">
             <li class="nav-item">
-                <a class="nav-link" href="#aboutme">ABOUT</a>
+                <a class="nav-link " href="#aboutme">ABOUT</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#experience">EXPERIENCE</a>
@@ -65,3 +63,8 @@
         </ul>
     </div>
 </nav>
+<script type="text/javascript">
+    $('.nav-link').click(function () {
+        $('.navbar-collapse').removeClass('show');
+    });
+</script>
