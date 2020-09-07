@@ -2,7 +2,7 @@
 
 #### This version of the website is deprecated.
 
-Latest version: https://sites.google.com/view/vinayakkgarg/home
+Latest version: https://sites.google.com/view/vinayakkgarg
 
 v2: https://vinayakkgarg.github.io/
 
